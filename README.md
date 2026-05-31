@@ -317,6 +317,6 @@ Add requirements.txt at repo root
 
 ⭐ **Star this repo if you found it useful!** ⭐
 
-*Built with ❤️ for portfolio & placement purposes*
+*Built with ❤️ by r4coder*
 
 </div>
