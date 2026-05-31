@@ -683,6 +683,12 @@ def page_retention(df, arts):
                 df2[col] = df2[col].astype(str).map(
                     lambda x, le=le: le.transform([x])[0] if x in le.classes_ else -1)
         feat_order = [c for c in (CATEGORICAL_COLS+NUMERIC_COLS) if c in df2.columns]
+        # Impute NaNs before prediction — prevents sklearn ValueError
+        for col in feat_order:
+            if df2[col].dtype in [np.float64, np.float32, float]:
+                df2[col] = df2[col].fillna(df2[col].median())
+            else:
+                df2[col] = df2[col].fillna(-1)
         probs = model.predict_proba(scaler.transform(df2[feat_order].values))[:,1]
         df["churn_prob"]   = probs
         df["risk_segment"] = pd.cut(probs,[0,0.35,0.65,1.0],
