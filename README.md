@@ -296,15 +296,6 @@ Add requirements.txt at repo root
 
 ---
 
-## 📋 Resume-Ready Description
-
-> **StreamIQ — OTT Churn Prediction & Retention Intelligence System**
->
-> Built a production-grade ML analytics platform to predict OTT subscriber churn using Python, XGBoost, and Streamlit. Engineered a 5,000-row synthetic dataset with 19 features and realistic churn business logic. Trained and compared 4 classification models achieving 83.5% accuracy and 0.694 ROC-AUC. Designed a premium Netflix-inspired dark-mode Streamlit dashboard with 5 interactive pages, Plotly visualisations, real-time churn scoring with probability gauge, risk segmentation (Low/Medium/High), and AI-powered personalised retention recommendations.
->
-> **Tech:** Python · Pandas · NumPy · Scikit-learn · XGBoost · Plotly · Streamlit · Joblib
-
----
 
 ## 👨‍💻 Author
 
