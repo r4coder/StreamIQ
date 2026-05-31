@@ -285,8 +285,8 @@ Add requirements.txt at repo root
 
 ## 🔮 Future Improvements
 
-  *SHAP explainability — per-prediction feature contribution breakdown
-- *Cohort retention analysis by signup month
+- [ ] SHAP explainability — per-prediction feature contribution breakdown
+- [ ] Cohort retention analysis by signup month
 - [ ] Time-series churn forecasting with LSTM
 - [ ] REST API endpoint for real-time scoring integration
 - [ ] A/B test simulation module for retention campaigns
