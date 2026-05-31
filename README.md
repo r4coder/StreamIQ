@@ -279,7 +279,7 @@ Add requirements.txt at repo root
 | Dashboard | Streamlit + Custom CSS |
 | Model Persistence | Joblib |
 | Fonts | Syne, DM Sans (Google Fonts) |
-| Deployment | Streamlit Cloud / Render / HF Spaces |
+| Deployment | Streamlit Cloud |
 
 ---
 
