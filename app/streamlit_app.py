@@ -735,7 +735,7 @@ def page_retention(df, arts):
     ].copy()
     top_risk["churn_prob"] = top_risk["churn_prob"].map("{:.1%}".format)
     st.dataframe(
-        top_risk.style.applymap(
+        top_risk.style.map(
             lambda v: "color:#e50914;font-weight:700" if v=="High Risk" else
                       ("color:#f59e0b;font-weight:700" if v=="Medium Risk" else "color:#10b981"),
             subset=["risk_segment"]),
